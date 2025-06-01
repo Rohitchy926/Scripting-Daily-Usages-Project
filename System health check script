@@ -1,3 +1,4 @@
+```
 #!/bin/bash
 
 CPU_THRESHOLD=30
@@ -31,3 +32,4 @@ if [ "$DISK_USAGE" -ge "$DISK_THRESHOLD" ]; then
 fi
 
 echo "System Health Check Completed."
+```
