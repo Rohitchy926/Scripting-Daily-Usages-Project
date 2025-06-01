@@ -1,0 +1,8 @@
+#/bin/bash
+
+LOG_DIR="/var/logs"
+DAYS=30
+
+echo "cleaning log greater than $DAYS in  $LOG_DIR..."
+find $LOG_DIR -name "*.log" -type f -mtime +30 -exec rm -f {} \;
+echo "log cleanup completed."
